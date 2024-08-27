@@ -6,7 +6,6 @@
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Contribuição](#contribuição)
 - [Licença](#licença)
 - [Contato](#contato)
 
