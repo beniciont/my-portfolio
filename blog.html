@@ -15,7 +15,18 @@
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        h2.fw-bolder a {
+            color: black;
+            text-decoration: none;
+        }
+
+        h2.fw-bolder a:hover {
+            color: blue;
+        }
+    </style>
 </head>
 <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
@@ -40,7 +51,7 @@
             <div class="container-fluid px-5 mb-5">
                 <div class="text-center mb-5">
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-black d-inline">Publicações</span></h1>
-                    <div class="d-flex justify-content-center fs-2 gap-4">
+                    <div class="d-flex justify-content-center align-items-center fs-2 gap-4">
                         <a class="text-gradient" href="https://medium.com/@benicio-neto" style="text-decoration: none;"><i class="bi bi-medium"></i><h5>Medium</h5></a>
                     </div>
                 </div>
@@ -48,7 +59,7 @@
                     <div class="col-lg-10 col-xl-8">
                         <div class="row justify-content-center gx-3 gx-lg-4 g-4">
                             <!-- Project Card 1-->
-                            <div class="col-md-6 mb-5">
+                            <div class="col-md-6 mb-5" data-category="Devops">
                                 <div class="card overflow-hidden shadow rounded-4 border-0 h-100">
                                     <div class="card-body p-0">
                                         <div class="container-fluid">
@@ -56,16 +67,14 @@
                                                 <!-- Coluna da imagem -->
                                                 <div class="col-md-12">
                                                     <div class="position-relative" style="margin-top: 10px;">
-                                                        <img class="img-fluid rounded-4" src="assets/auto-pwshell.png" style="width: 100%; height: 200px; object-fit: cover;" alt="Screenshot do projeto automatizando a implantação de VMs no Azure">
-                                                        <!-- Botão de acesso -->
-                                                        <a href="https://medium.com/@benicio-neto/automatizando-a-implantação-de-vms-no-azure-usando-scripts-no-powershell-3c4bfd224e15" class="stretched-link" aria-label="Leia mais sobre o projeto Automatizando a implantação de VMs no Azure"></a>
-                                                        <a href="https://medium.com/@benicio-neto/automatizando-a-implantação-de-vms-no-azure-usando-scripts-no-powershell-3c4bfd224e15" class="btn btn-primary stretched-link position-absolute top-50 start-50 translate-middle">Acessar</a>
+                                                        <img class="img-fluid rounded-4" src="assets/auto-pwshell.png" style="width: 100%; height: 200px; object-fit: cover;" alt="Screenshot do projeto criação de usuários em massa no Entra ID">
                                                     </div>
                                                 </div>
                                                 <!-- Coluna da descrição -->
                                                 <div class="col-md-12 p-4">
-                                                    <h2 class="fw-bolder">Automatizando a implantação de VMs no Azure usando scripts no PowerShell</h2>
-                                                    <p>Simplifique o processo de criação e gerenciamento de VMs com comandos eficientes e diretos.</p>
+                                                    <h2 class="fw-bolder"><a href="https://medium.com/@benicio-neto/automatizando-a-implantação-de-vms-no-azure-usando-scripts-no-powershell-3c4bfd224e15" rel="bookmark">Criação de Usuários em Massa no Entra ID Usando Bulk Operations</a></h2>
+                                                    <p>Se você busca otimizar seus processos de implantação no Azure e tornar sua gestão de infraestrutura mais ágil, este guia é para você!</p>
+                                                    <a class="more-link" href="https://medium.com/@benicio-neto/automatizando-a-implantação-de-vms-no-azure-usando-scripts-no-powershell-3c4bfd224e15">Leia mais… »</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,15 +91,14 @@
                                                 <div class="col-md-12">
                                                     <div class="position-relative" style="margin-top: 10px;">
                                                         <img class="img-fluid rounded-4" src="assets/az-bulk-op.png" style="width: 100%; height: 200px; object-fit: cover;" alt="Screenshot do projeto criação de usuários em massa no Entra ID">
-                                                        <!-- Botão de acesso -->
                                                         <a href="https://medium.com/@benicio-neto/criação-de-usuários-em-massa-no-entra-id-usando-bulk-operations-6d95ea1fe78c" class="stretched-link" aria-label="Leia mais sobre o projeto Criação de Usuários em Massa no Entra ID"></a>
-                                                        <a href="https://medium.com/@benicio-neto/criação-de-usuários-em-massa-no-entra-id-usando-bulk-operations-6d95ea1fe78c" class="btn btn-primary stretched-link position-absolute top-50 start-50 translate-middle">Acessar</a>
                                                     </div>
                                                 </div>
                                                 <!-- Coluna da descrição -->
                                                 <div class="col-md-12 p-4">
-                                                    <h2 class="fw-bolder">Criação de Usuários em Massa no Entra ID Usando Bulk Operations</h2>
+                                                    <h2 class="fw-bolder"><a href="https://medium.com/@benicio-neto/criação-de-usuários-em-massa-no-entra-id-usando-bulk-operations-6d95ea1fe78c" rel="bookmark">Criação de Usuários em Massa no Entra ID Usando Bulk Operations</a></h2>
                                                     <p>Automatize a criação de múltiplos usuários no Entra ID com eficiência utilizando as operações em massa.</p>
+                                                    <a class="more-link" href="https://medium.com/@benicio-neto/criação-de-usuários-em-massa-no-entra-id-usando-bulk-operations-6d95ea1fe78c">Leia mais… »</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,4 +129,11 @@
                     <a class="small" href="#!">Privacidade</a>
                     <span class="mx-1">&middot;</span>
                     <a class="small" href="#!">Termos</a>
-                    <span class="mx-1
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
